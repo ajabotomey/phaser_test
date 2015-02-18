@@ -35,6 +35,9 @@ function create() {
 	// Platforms contains the ground and the two ledges to jump on
 	platforms = game.add.group();
 	
+	// We will enable physics for any object that is created in this group
+	platforms.enableBody = true;
+	
 	// Create the ground
 	var ground = platforms.create(0, game.world.height - 64, 'ground');
 	
